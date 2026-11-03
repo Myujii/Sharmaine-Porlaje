@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">My Portfolio</a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#seminars" class="nav-link">Seminars</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-btn" class="theme-toggle" aria-label="Toggle light and dark theme">☀️🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                
+                <h1>Hi, I'm <span class="highlight">Sharmaine Porlaje</span></h1>
+                <p>Building accessible, responsive, and user-centric digital experiences.</p>
+            </div>
+        </section>
+
+        
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-flex-layout">
+                   
+                    <div class="about-main-content">
+                        <div class="bio-text">
+                            <p>Hello! you can call me Min.</p>
+                            <p>Born on the 24th of May, 2001</p>
+                            
+                        </div>
+                        
+                        
+                        <div class="hobbies-block">
+                            <h3>My Hobbies & Interests</h3>
+                            <ul class="hobbies-list">
+                                <li>
+                                    <span class="hobby-icon">📖</span>
+                                    <div>
+                                        <strong>Reading:</strong> Immersed with someones beautiful imagination. (Webtoons, Manga, Books)
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="hobby-icon">🎮</span>
+                                    <div>
+                                        <strong>Gaming:</strong> Mobile Legends Bang Bang. Play with me. (IGN: myuujii - 1142956387)
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="hobby-icon">🎬</span>
+                                    <div>
+                                        <strong>Movie:</strong> Let's watch together. (Walt Disney, Pixar, DreamWorks, Illumination, Sony Pictures, Anime)
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <div class="about-side-content">
+                        <div class="pet-card">
+                            <div class="pet-img-container">
+                                <img src="Baba_2.jpg" alt="The most lovable dog you'll ever meet." class="pet-image">
+                            </div>
+                            <div class="pet-info">
+                                <span class="pet-badge">Meet My Sidekick 🐾</span>
+                                <h3>Baba</h3>
+                                <p>My baby with four feet. Baba is responsible for monitoring my keyboard uptime, enforcing mandatory screen breaks, and optimizing afternoon walking loops.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="skills" class="section alternate-bg">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><h3>Frontend</h3><p>HTML5, CSS3, JavaScript, Bootstrap</p></div>
+                    <div class="skill-card"><h3>Backend</h3><p>JavaScript, PHP, Python</p></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="seminars" class="section">
+            <div class="container">
+                <h2>Attended Seminars</h2>
+                <div class="seminars-grid">
+                    <!-- Seminar 1 -->
+                    <article class="seminar-card">
+                        <div class="seminar-image-wrapper">
+                            <img src="seminar2.jpg" alt="The Digital Generation" class="seminar-img">
+                        </div>
+                        <div class="seminar-info">
+                            <span class="seminar-badge">Tech Tutor 10</span>
+                            <h3>The Digital Generation</h3>
+                            <p>Discussions centered on how digital tools, emerging tech, and IT modernization shape everyday life and education.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="education" class="section alternate-bg">
+            <div class="container">
+                <h2>Education & Achievements</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2026 - 2027</span>
+                        <h3>Bachelor of Science in Information Technologies</h3>
+                        <p>Currently: 2nd Year College.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2017 - 2019</span>
+                        <h3>Informatics International College</h3>
+                        <p>Senior Highschool Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                        <span class="error-msg" id="name-error">Name is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="your.email@example.com">
+                        <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="How can I help you?"></textarea>
+                        <span class="error-msg" id="message-error">Message cannot be empty.</span>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-success" class="success-msg">Thank you! Your message has been sent successfully.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
